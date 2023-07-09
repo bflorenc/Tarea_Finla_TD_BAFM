@@ -37,7 +37,7 @@ Para el clasificador he usado el modelo secuencial con 5 capas de convoluciones
 
 Model: "sequential"
 _________________________________________________________________
- Layer (type)                Output Shape              Param #   
+ Layer (type)                Output Shape              Param    
 =================================================================
  conv2d (Conv2D)             (None, 222, 222, 32)      896       
                                                                  
@@ -58,13 +58,8 @@ _________________________________________________________________
 
 al compilar el modelo lo he optimizado con el "adadelta"
 
-//El parámetro optimizer='adadelta' se refiere a la elección del algoritmo de optimización llamado "Adadelta" 
-en un modelo de aprendizaje automático. El algoritmo Adadelta es un método de optimización basado en gradientes 
-que se utiliza para ajustar los pesos y los sesgos del modelo durante el proceso de entrenamiento.
-
-El algoritmo Adadelta se caracteriza por adaptar automáticamente la tasa de aprendizaje en función del historial 
-acumulado de los gradientes anteriores. Esto ayuda a superar algunos de los desafíos asociados con otros métodos 
-de optimización, como la selección manual de una tasa de aprendizaje adecuada.
+//El algoritmo Adadelta es un método de optimización basado en gradientes que se utiliza para ajustar los pesos y los sesgos del modelo durante el proceso de entrenamiento. Se caracteriza por adaptar automáticamente la tasa de aprendizaje en función del historial 
+acumulado de los gradientes anteriores.
 
 Código para entrenar el modelo - fit_generator() 
 
@@ -80,7 +75,7 @@ validation_steps es similar a steps_per_epoch, pero para el conjunto de test. Es
 
 
 
-Utilicé este comando para guardar el modelo custom_model.save("model_secuencial.h5") y luego poder compararlo con el otro modelo Mobilenet
+Utilicé este comando para guardar el modelo custom_model.save("model_secuencial.h5") y luego poder compararlo con el otro modelo Mobilenet 
 
 
 3.
