@@ -136,4 +136,9 @@ Conclusión de matrices de confusion de ambos modelos
 
 Los resultados muestran que el modelo Secuencial tiene un rendimiento muy bajo en todas las métricas, ya que la precisión, recall y f1-score son todos cercanos a cero. La precisión global del modelo es de 0.0790, lo que indica un rendimiento muy bajo.
 
+
+
 Los resultados en el modelo Mobilenet muestran que las clases 2, 3, 4, 5 y 6 tienen valores de precisión mayores a cero, lo que indica que el modelo tiene más aciertos positivos en esas clases. La precisión global del modelo es del 58.52%
+
+
+
